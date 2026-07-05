@@ -22,52 +22,41 @@
                <a href="#home" class="avatar-link">
                </a>
             </div>
-            <ul 
-               <li class="stickynav"><a href="#home" 
-               <li class="stickynav"><a href="#specialitaeten" 
-               <li class="stickynav"><a href="#kontakt" 
+<ul class="nav-links">
+               <li class="stickynav"><a href="#home">Home</a></li>
+               <li class="stickynav"><a href="#skills">Skills</a></li>
+               <li class="stickynav"><a href="#kontakt">Kontakt</a></li>
             </ul>
          </nav>
       </header>
 
 
 <!-- Hero Bereich -->
-      <section id="home" class="hero-background" 
-         background: linear-gradient(135deg, rgba(44,62,80,0.85), rgba(52,152,219,0.9)), url('https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg');
-         backgroundBlendMode: overlay;
-         background-size: cover;
-         background-position: center;
-         background-repeat: no-repeat;
-         ">
-         <div class="hero-content-centered" 
-            <div 
-               
-               <!-- Titel -->
-               <h1 
-               
-               <!-- Berufstitel row -->
-               <p 
-               
-               <!-- CTA Button -->
-               <button onclick="document.getElementById('competences').scrollIntoView({ behavoir:'smooth' })" 
-               
-               <!-- Bild container -->
-               <figure 
-                  <blockquote>
-                     <img src="https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg" alt="Patrick Hoke Portraitfoto">
-                  </blockquote>
-               </figure>
-               
-            </div>
-         </div>
-      </section>
+<section id="home" class="hero-background">
+    <div class="hero-container">
+      <div class="hero-content-split">
+        <div class="hero-text-column">
+          <h1 class="hero-title">Senior Produktmanager & DevOps Experte</h1>
+          <p class="hero-description">Über 15 Jahre Erfahrung in Softwarearchitektur, Automatisierungsengineering und produktorientiertem Projektmanagement. Ich schlage die Brücke zwischen technischer Exzellenz und geschäftlichem Erfolg.</p>
+          <div class="cta-container">
+            <a href="#competences" class="cta-button">Expertise ansehen</a>
+          </div>
+        </div>
+        <div class="hero-image-column">
+          <figure class="hero-image-frame">
+            <img src="https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg" alt="Patrick Hoke Portraitfoto" class="profile-avatar-hero">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
 
       <!-- Kompetenzen / Professional Skills Section -->
-      <section id="competences" class="" 
-         <div 
-               <h2 
+      <section id="skills" class="skills">
+         <div>
+               <h2></h2> 
             
-            <p 
+            <p>
                Mehr als 15 Jahre praktische Erfahrung in Softwarearchitektur, Automatisierungsengineering, Release Management und Produktbegleitung mit kontinuierlicher Weiterbildung in modernen Technologiestacks. Diese Sammlung reflektiert unsere wesentlichen technischen Bereiche.
             </p>
          
@@ -75,217 +64,250 @@
             <div class="dashboard-grid">
                <!-- Card Python: Hochleistungsprgrammierung & Anwendungs-Entwicklung -->
                <article class="tech-card orange">
-                  <h3 class="tech-kartitel">Python Programming</h3>
-                  <p class="tech-summary">High Performance Coding für Backend Services & Automatisierungsaufgaben</p>
-                  
-                  <ul class="techlist">
-                     <li>Backend-Development mit Django Framework</li>
-                     <li>Schutzskript schreiben von Hilfsprogrammen und Skript-Automatisierungen</li>
-                     <li>Objektorientierte Software Architektur mit Design Patterns</li>
-                  </ul>
+<h3 class="tech-title">Python Programming</h3>
+                   <p class="tech-summary">High Performance Coding für Backend Services & Automatisierungsaufgaben</p>
+                   
+                   <ul class="techlist">
+                      <li>Backend-Development mit Django Framework</li>
+                      <li>Skripte schreiben von Hilfsprogrammen und Skript-Automatisierungen</li>
+                      <li>Objektorientierte Software Architektur mit Design Patterns</li>
+                   </ul>
                </article>
                
                <!-- Card Bash: Linux Systemverwaltung & Automationscripts -->
                <article class="tech-card orange">
-                  <h3 class="tech-kartitel">Bash Scripting</h3>
-                  <p class="tech-summary">Linux administration, Batch-Processing Workflows & Cross-Platform Shell</p>
-                  
-                  <ul class="techlist">
-                     <li>Systemadministration mit Prozessverwaltung & Betriebssystemkompetenz</li>
-                     <li>Deployment Scripting & Batch-Jobs für automatische Freigaben</li>
-                     <li>Shell-basirte Konfigurationsverwaltung und Loganalyse</li>
-                  </ul>
+<h3 class="tech-title">Bash Scripting</h3>
+                   <p class="tech-summary"> Linux administration, Batch-Processing Workflows & Cross-Platform Shell</p>
+                   
+                   <ul class="techlist">
+                      <li>Systemadministration mit Prozessverwaltung & Betriebssystemkompetenz</li>
+                      <li>Deployment Scripting & Batch-Jobs für automatische Freigaben</li>
+                      <li>Shell-basierte Konfigurationsverwaltung und Loganalyse</li>
+                   </ul>
                </article>
                
                <!-- Card TypeScript: Type Safe JS Extension -->
                <article class="tech-card orange tech-card-hover-variant-uniform">
-                  <h3 class="tech-kartitel">TypeScript</h3>
-                  <p class="tech-summary">Type-Safe Modern Javascript Erweiterung mit Fullstack Potential</p>
-                  
-                  <ul class="techlist">
-                     <li>ES6+ Funktionen für Frontend DOM Manipulationen</li>
-                     <li>Type Definitionen für Enterprise-Anwendungsarchitektur</li>
-                  </ul>
+<h3 class="tech-title">TypeScript</h3>
+                   <p class="tech-summary">Type-Safe Modern Javascript Erweiterung mit Fullstack Potential</p>
+                   
+                   <ul class="techlist">
+                      <li>ES6+ Funktionen für Frontend DOM Manipulationen</li>
+                      <li>Type Definitionen für Enterprise-Anwendungsarchitektur</li>
+                   </ul>
                </article>
                
             </div>
             
-         <!-- MONITORING TECHNIKEN -->
-         
-            <details "open>
-               <summary 
+          <!-- MONITORING TECHNIKEN -->
+          
+          <details open>
+               <summary>MONITORING</summary>
                <div class="dashboard-grid">
             
                   <!-- Prometheus Observability & Alerting -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Prometheus</h3>
-                     <p class="tech-summary">Zeitreihen Datenbank für Metrics Sammlung & Alerting Regelsätze</p>
-
-                     <ul 
-                        <li>Metrik Erfassung & ZeitSeries Speichern Mechanismus</li>
-                        <li>Alarm-Richtlinien Generierungslogik PromQL Basis</li>
-                        <li>Cockpit UI & Graph Darstellung Visualisierung</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Prometheus</h3>
+                      <p class="tech-summary">Zeitreihen Datenbank für Metrics Sammlung & Alerting Regelsätze</p>
+                      
+                      <ul>
+                         <li>Metrik Erfassung & ZeitSeries Speichern Mechanismus</li>
+                         <li>Alarm-Richtlinien Generierungslogik PromQL Basis</li>
+                         <li>Cockpit UI & Graph Darstellung Visualisierung</li>
+                      </ul>
+                   </article>
+               
                   
                   <!-- Grafana: Analytics Visualisation Platform -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Grafana</h3>
-                     <p class="tech-summary">Visualisierung Plattforrm für Observability Dashboards & Alerts</p>
-                     
-                     <ul 
-                        <li>Advanced Multi-Source Dashboarads Creation</li>
-                        <li>DataSources Integration (Prometheus, Loki, InfluxDB Compatible)</li>
-                        <li>Custom Plugin Einbindung & Templating Varianten</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Grafana</h3>
+                      <p class="tech-summary">Visualisierung Plattforrm für Observability Dashboards & Alerts</p>
+                      
+                      <ul>
+                         <li>Advanced Multi-Source Dashboarads Creation</li>
+                         <li>DataSources Integration (Prometheus, Loki, InfluxDB Compatible)</li>
+                         <li>Custom Plugin Einbindung & Templating Varianten</li>
+                      </ul>
+                   </article>
+               
                   
                   <!-- Loki: Zentralisierte Logging Solution -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Loki</h3>
-                     <p class="tech-summary">Cloud-native Log Aggregator mit Prometheus Compatibility</p>
-                     
-                     <ul 
-                        <li>Zentralisierter Log Sammelns mit Label Filtering</li>
-                        <li>"Logging Without Boilerplate"-Philosophie Umsetzung</li>
-                        <li>Ausschnittauszug mit Jaeger-Integration</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Loki</h3>
+                      <p class="tech-summary">Cloud-native Log Aggregator mit Prometheus Compatibility</p>
+                      
+                      <ul>
+                         <li>Zentralisierter Log Sammelns mit Label Filtering</li>
+                         <li>"Logging Without Boilerplate"-Philosophie Umsetzung</li>
+                         <li>Ausschnittauszug mit Jaeger-Integration</li>
+                      </ul>
+                   </article>
+               
                   
                   <!-- Tempo: Distributed Tracing -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Tempo / OpenTelemetry</h3>
-                     <p class="tech-summary">Distributed Tracing Engine Performance Profiling</p>
-                     
-                     <ul 
-                        <li>Traceable Span-Chain Collection via Propagation Headers</li>
-                        <li>Sampling Rates & Trace Export Configurations</li>
-                        <li>Frontend Explorer UI & Grafana-Connector Integration</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Tempo / OpenTelemetry</h3>
+                      <p class="tech-summary">Distributed Tracing Engine Performance Profiling</p>
+                      
+                      <ul>
+                         <li>Traceable Span-Chain Collection via Propagation Headers</li>
+                         <li>Sampling Rates & Trace Export Configurations</li>
+                         <li>Frontend Explorer UI & Grafana-Connector Integration</li>
+                      </ul>
+                   </article>
+               
                </div>
             </details>
 
-      <!-- DATABASE STORAGE TECHNOLOGIES -->
-
-            <details "open>
-               <summary 
+       <!-- DATABASE STORAGE TECHNOLOGIES -->
+       
+          <details open>
+               <summary>DATABASE STORAGE TECHNOLOGIES</summary>
                <div class="dashboard-grid">
                   <!-- SQL Databases Section -->
                   <article class="tech-card orange tech-card-hover-variant-uniform">
-                     <h3 class="tech-kartitel">SQL Data Warehouses</h3>
-                     <p class="tech-summary">Relationally Structured Database Management Systems</p>
+<h3 class="tech-title">SQL Data Warehouses</h3>
+                      <p class="tech-summary">Relationally Structured Database Management Systems</p>
+                      
+                      <ul>
+                         <li>Replizierung-Master Slave Konfiguration</li>
+                         <li>Mehrmeister-Replikation (Bi-directional Sync)</li>
+                      </ul>
+                   </article>
                
-                     <ul 
-                        <li>Replazierung-Master Slave Konfiguration</li>
-                        <li>Mehrmeister-Replikation (Bi-directional Sync)</li>
-                     </ul>
-                  </article>
                   
                   
                   <!-- MongoDB Document Store -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Document Stores</h3>
-                     <p class="tech-summary">Non-relational data persistence architecture</p>
-                     
-                     <ul 
-                        <li>JSON-Based Document Collection Management</li>
-                        <li>Sharding Horizontale Skalierung Strategien</li>
-                        <li>Aggregations-Pipeline für Datenverarbeitung</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Document Stores</h3>
+                      <p class="tech-summary">Non-relational data persistence architecture</p>
+                      
+                      <ul>
+                         <li>JSON-Based Document Collection Management</li>
+                         <li>Sharding Horizontale Skalierung Strategien</li>
+                         <li>Aggregations-Pipeline für Datenverarbeitung</li>
+                      </ul>
+                   </article>
+               
                </div>
             </details>
-            <!-- DevOps Infrastructure Stack -->
-            <details "open>
-               <summary 
+          <!-- DevOps Infrastructure Stack -->
+          <details open>
+               <summary>DevOps Infrastructure</summary>
                <div class="dashboard-grid">
             
                <!-- Ansible IaC -->
                <article class="tech-card orange">
-                  <h3 class="tech-kartitel">Ansible (IaC)</h3>
-                     <p class="tech-summary">Konfigurationsmanagement & Agent-less Deployment</p>
-                     
-                     <ul 
-                        <li>IaC Rolle-basierte Inventurmapping</li>
-                        <li>Ad-hoc Befehle und Modulkonsolen</li>
-                        <li>Inventory Dynamische Quellen Integrations</li>
-                        <li>Vault-Verschlüsselung für Credentials</li>
-                     </ul>
-                  </article>
+                  <h3 class="tech-title">Ansible (IaC)</h3>
+                  <p class="tech-summary">Konfigurationsmanagement & Agent-less Deployment</p>
+                      
+                      <ul>
+                         <li>IaC Rolle-basierte Inventurmapping</li>
+                         <li>Ad-hoc Befehle und Modulkonsolen</li>
+                         <li>Inventory Dynamische Quellen Integrations</li>
+                         <li>Vault-Verschlüsselung für Credentials</li>
+                      </ul>
+                   </article>
+               
                
                <!-- Jenkins/GitHub Actions CI CD -->
                   <article class="tech-card orange tech-card-hover-variant-uniform">
-                     <h3 class="tech-Kartitel">Jenkins & GitHub Actions</h3>
-                     <p class="tech-summary">CI/CD Pipeline Orchestration Frameworks</p>
-                     
-                     <ul 
-                        <li>Pipes-line Code Syntax (Groovy/Jenkis YAML)</li>
-                        <li>MultiStage Build-Prozesse mit Artefaktverpackung</li>
-                        <li>Parallel Jobs & Quality Gate Validation</li>
-                        <li>Umgebungsumstieg (Dev->Test->Production) Automation</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Jenkins & GitHub Actions</h3>
+                      <p class="tech-summary">CI/CD Pipeline Orchestration Frameworks</p>
+                      
+                      <ul>
+                         <li>Pipes-line Code Syntax (Groovy/Jenkis YAML)</li>
+                         <li>MultiStage Build-Prozesse mit Artefaktverpackung</li>
+                         <li>Parallel Jobs & Quality Gate Validation</li>
+                         <li>Umgebungsumstieg (Dev->Test->Production) Automation</li>
+                      </ul>
+                   </article>
+               
                
                   <!-- Harbor Registry -->
                   <article class="tech-card orange">
-                     <h3 class="tech-Kartikel">Harbor (OCI Registry)</h3>
-                     <p class="tech-summary">Private Container Image Repository mit Security Scanning</p>
-                     
-                     <ul 
-                        <li>Namespace-getrennte Repositories mit RBAC Berechtigungen</li>
-                        <li>VulnerabilityScanning via ClamAV Integration</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Harbor (OCI Registry)</h3>
+                      <p class="tech-summary">Private Container Image Repository mit Security Scanning</p>
+                      
+                      <ul>
+                         <li>Namespace-getrennte Repositories mit RBAC Berechtigungen</li>
+                         <li>VulnerabilityScanning via ClamAV Integration</li>
+                      </ul>
+                   </article>
+               
                
                <!-- Docker Containers -->
                   <article class="tech-card orange">
-                     <h3 class="tech-Kartikel">Docker Container</h3>
-                     <p class="tech-summary">Microservicing Image Paketierung & Layered Buildoptimierung</p>
-                     
-                     <ul 
-                        <li>Dockerfile-Generators mit Multiple Stages</li>
-                        <li>.Dokerignore Exclude Patterns für Cleaner Layers</li>
-                        <li>Build Cache Optimization Techniken (COPY vs RUN Order)</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Docker Container</h3>
+                      <p class="tech-summary">Microservicing Image Paketierung & Layered Buildoptimierung</p>
+                      
+                      <ul>
+                         <li>Dockerfile-Generators mit Multiple Stages</li>
+                         <li>.Dokerignore Exclude Patterns für Cleaner Layers</li>
+                         <li>Build Cache Optimization Techniken (COPY vs RUN Order)</li>
+                      </ul>
+                   </article>
+               
                </div>
             </details>
 
             <!-- Community Collaboration CHATTOOLS -->
-            <details "open>
-               <summary 
+            <details open>
+               <summary>Community Collaboration CHATTOOLS</summary>
                <div class="dashboard-grid">
             
                   <!-- Rocket.Chat Enterprise Messenger -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartittel">Rocket.Chat</h3>
-                     <p class="tech-summary">Self-hosted Omni-Channel Livechat Lösung für Supportteams</p>
-                     
-                     <ul 
-                        <li>Livechat-rooms und Kanäle Integration</li>
-                        <li>Slack-Interface ähnliche UX Design-Erfahrung</li>
-                        <li>Push Benarichtigungen</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Rocket.Chat</h3>
+                      <p class="tech-summary">Self-hosted Omni-Channel Livechat Lösung für Supportteams</p>
+                      
+                      <ul>
+                         <li>Livechat-rooms und Kanäle Integration</li>
+                         <li>Slack-Interface ähnliche UX Design-Erfahrung</li>
+                         <li>Push Benarichtigungen</li>
+                      </ul>
+                   </article>
+               
                   
                   <!-- Element/Matrix Federales Chat -->
                   <article class="tech-card orange">
-                     <h3 class="tech-kartitel">Matrix (Element.io)</h3>
-                     <p class="tech-summary">Federisches Dezentralisiertes Chat Netwerk</p>
-                     
-                     <ul 
-                        <li>Räume übers mehrere Serverfederations verteilt</li>
-                        <li>End-to-End Verschlussung</li>
-                        <li>Power-Level Hierarchie für Moderaton Kontrolle</li>
-                        <li>Sync Gateway Synchronisationsmechanismen</li>
-                     </ul>
-                  </article>
+<h3 class="tech-title">Matrix (Element.io)</h3>
+                      <p class="tech-summary">Federisches Dezentralisiertes Chat Netwerk</p>
+                      
+                      <ul>
+                         <li>Räume übers mehrere Serverfederations verteilt</li>
+                         <li>End-to-End Verschlussung</li>
+                         <li>Power-Level Hierarchie für Moderaton Kontrolle</li>
+                         <li>Sync Gateway Synchronisationsmechanismen</li>
+                      </ul>
+                   </article>
+               
                </div>
             </details>
          
          </div>
-      </section>
-
-   </body>
+        </section>
+        
+        <section id="kontakt" class="contact">
+           <div class="container">
+               <h2>Kontakt</h2>
+               <p>Schreiben Sie mir gerne eine Nachricht für Kooperationen oder Anfragen.</p>
+               <form action="#" method="post">
+                  <div class="form-group">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="name" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="email">E-Mail:</label>
+                     <input type="email" id="email" name="email" required>
+                  </div>
+                  <div class="form-group">
+                     <label for="message">Nachricht:</label>
+                     <textarea id="message" name="message" required></textarea>
+                  </div>
+                  <button type="submit">Senden</button>
+               </form>
+           </div>
+        </section>
+    </body>
 </html>
