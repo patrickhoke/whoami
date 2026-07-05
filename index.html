@@ -15,45 +15,44 @@
       <!-- Fixiere Kopfmenü -->
       <header class="sticky-header fixed-top-navigation">
          <nav>
-                  <div class="menu-container">
+                  <div class="menu-desktop-container">
                <!-- Desktop Logo -->
-               <span style="display: none; font-size: 1.5rem; font-weight: 700; color: #2c3e50; text-decoration: none;">P.H.</span>
+               <span class="hidden-logo desktop-only">P.H.</span>
                
-               <a href="#home" style="text-decoration: none; color: #2c3e50;">
-                  <img src="https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg" alt="Patrick Hoke Avatar" class="profile-avatar" style="width: 48px; height: 48px; border: 2px solid white; border-radius: 50%;">
+               <a href="#home" class="avatar-link">
                </a>
             </div>
-            <ul style="float: none; margin: 0; padding: 0; list-style: none">
-               <li class="stickynav"><a href="#home" style="display:block; padding:0.75rem 0;text-decoration: none;color: #2c3e50;">Startseite</a></li>
-               <li class="stickynav"><a href="#specialitaeten" style="display:block; padding:0.75rem 0;text-decoration: none;color: #2c3e50;">Kompetenzen</a></li>
-               <li class="stickynav"><a href="#kontakt" style="display:block; padding:0.75rem 0;text-decoration: none;color: #2c3e50;">Kontakt</a></li>
+            <ul 
+               <li class="stickynav"><a href="#home" 
+               <li class="stickynav"><a href="#specialitaeten" 
+               <li class="stickynav"><a href="#kontakt" 
             </ul>
          </nav>
       </header>
 
 
 <!-- Hero Bereich -->
-      <section id="home" class="hero-background" style="
+      <section id="home" class="hero-background" 
          background: linear-gradient(135deg, rgba(44,62,80,0.85), rgba(52,152,219,0.9)), url('https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg');
          backgroundBlendMode: overlay;
          background-size: cover;
          background-position: center;
          background-repeat: no-repeat;
          ">
-         <div class="hero-content-centered" style="margin: 0 autopadding: 160px 20px 100px;">
-            <div style="position:relative">
+         <div class="hero-content-centered" 
+            <div 
                
                <!-- Titel -->
-               <h1 style="font-size:clamp(2.2rem, 5vw, 3.5rem);margin-bottom:1rem;lineHeight:1.1;color:white">Herzlich Willkommen<br>auf meiner Webseite</h1>
+               <h1 
                
                <!-- Berufstitel row -->
-               <p style="fontSize:1.45rem;color:rgba(255,255,255,0.96);marginBottom:2.25rem;fontWeight:500">Produktmanager • DevOps-Ingenieur &bull; Python-Specialist</p>
+               <p 
                
                <!-- CTA Button -->
-               <button onclick="document.getElementById('competences').scrollIntoView({ behavoir:'smooth' })" style="backgroundColor:white;color:#2c3e50;border:none;padding:15px 40px;borderRadius:6px;fontSize:1rem;fontWeight:600;cuRsSor:pointer;textTransform:uppercase;LetterSpacing:0.05em;Transition:all 0.2s,ease;BoxShadow:0 4px 12px,rca(0,0,0,0.15);margin:8px 0;cursor:pointer;">See portfolio</button>
+               <button onclick="document.getElementById('competences').scrollIntoView({ behavoir:'smooth' })" 
                
                <!-- Bild container -->
-               <figure style="textAlign:center;margin-top:1.5rem">
+               <figure 
                   <blockquote>
                      <img src="https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg" alt="Patrick Hoke Portraitfoto">
                   </blockquote>
@@ -64,11 +63,11 @@
       </section>
 
       <!-- Kompetenzen / Professional Skills Section -->
-      <section id="competences" class="" style="padding:5rem 0;maxWidth:1180px;margin-left:auto;">
-         <div style="MaxWidth:950px;marginLeft:auto;">
-               <h2 style="border-bottom: 4px solid #2c3e50; display: inline-block; padding-bottom: .75rem; margin-bottom: 2rem; color: #2c3e50; font-size: 2rem; text-align: center; width: 100%; margin-left: auto; margin-right: auto">Technische Kompetenzbereiche</h2>
+      <section id="competences" class="" 
+         <div 
+               <h2 
             
-            <p style="maxWidth:800px;Margin: 0 auto 3rem auto;LineHeight:1.8;fontSize:1.125rem;color:#1e293b;text-align:center;">
+            <p 
                Mehr als 15 Jahre praktische Erfahrung in Softwarearchitektur, Automatisierungsengineering, Release Management und Produktbegleitung mit kontinuierlicher Weiterbildung in modernen Technologiestacks. Diese Sammlung reflektiert unsere wesentlichen technischen Bereiche.
             </p>
          
@@ -114,7 +113,7 @@
          <!-- MONITORING TECHNIKEN -->
          
             <details "open>
-               <summary style="-webkit-appearance:none;-moz-appearance:none;background:none;border:none;padding:inherit;width:100% cursor:pointer;">OBSERVABILITY TOOLCHAIS: METRICS LOGGING TRACING</summary>
+               <summary 
                <div class="dashboard-grid">
             
                   <!-- Prometheus Observability & Alerting -->
@@ -122,7 +121,7 @@
                      <h3 class="tech-kartitel">Prometheus</h3>
                      <p class="tech-summary">Zeitreihen Datenbank für Metrics Sammlung & Alerting Regelsätze</p>
 
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Metrik Erfassung & ZeitSeries Speichern Mechanismus</li>
                         <li>Alarm-Richtlinien Generierungslogik PromQL Basis</li>
                         <li>Cockpit UI & Graph Darstellung Visualisierung</li>
@@ -134,7 +133,7 @@
                      <h3 class="tech-kartitel">Grafana</h3>
                      <p class="tech-summary">Visualisierung Plattforrm für Observability Dashboards & Alerts</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Advanced Multi-Source Dashboarads Creation</li>
                         <li>DataSources Integration (Prometheus, Loki, InfluxDB Compatible)</li>
                         <li>Custom Plugin Einbindung & Templating Varianten</li>
@@ -146,7 +145,7 @@
                      <h3 class="tech-kartitel">Loki</h3>
                      <p class="tech-summary">Cloud-native Log Aggregator mit Prometheus Compatibility</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Zentralisierter Log Sammelns mit Label Filtering</li>
                         <li>"Logging Without Boilerplate"-Philosophie Umsetzung</li>
                         <li>Ausschnittauszug mit Jaeger-Integration</li>
@@ -158,7 +157,7 @@
                      <h3 class="tech-kartitel">Tempo / OpenTelemetry</h3>
                      <p class="tech-summary">Distributed Tracing Engine Performance Profiling</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Traceable Span-Chain Collection via Propagation Headers</li>
                         <li>Sampling Rates & Trace Export Configurations</li>
                         <li>Frontend Explorer UI & Grafana-Connector Integration</li>
@@ -170,14 +169,14 @@
       <!-- DATABASE STORAGE TECHNOLOGIES -->
 
             <details "open>
-               <summary style="cursor:pointer;font-weight:600;color:#2c3e50;">DATABASE &amp; STREAM PROCESSING TECHNOLOGIES</summary>       
+               <summary 
                <div class="dashboard-grid">
                   <!-- SQL Databases Section -->
                   <article class="tech-card orange tech-card-hover-variant-uniform">
                      <h3 class="tech-kartitel">SQL Data Warehouses</h3>
                      <p class="tech-summary">Relationally Structured Database Management Systems</p>
                
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Replazierung-Master Slave Konfiguration</li>
                         <li>Mehrmeister-Replikation (Bi-directional Sync)</li>
                      </ul>
@@ -189,7 +188,7 @@
                      <h3 class="tech-kartitel">Document Stores</h3>
                      <p class="tech-summary">Non-relational data persistence architecture</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>JSON-Based Document Collection Management</li>
                         <li>Sharding Horizontale Skalierung Strategien</li>
                         <li>Aggregations-Pipeline für Datenverarbeitung</li>
@@ -199,7 +198,7 @@
             </details>
             <!-- DevOps Infrastructure Stack -->
             <details "open>
-               <summary style="cursor:pointer;font-weight:600;color:#2c3e50;">CONTAINERIZATION AND ORCHESTRATION SOLUTIONS</summary>
+               <summary 
                <div class="dashboard-grid">
             
                <!-- Ansible IaC -->
@@ -207,7 +206,7 @@
                   <h3 class="tech-kartitel">Ansible (IaC)</h3>
                      <p class="tech-summary">Konfigurationsmanagement & Agent-less Deployment</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>IaC Rolle-basierte Inventurmapping</li>
                         <li>Ad-hoc Befehle und Modulkonsolen</li>
                         <li>Inventory Dynamische Quellen Integrations</li>
@@ -220,7 +219,7 @@
                      <h3 class="tech-Kartitel">Jenkins & GitHub Actions</h3>
                      <p class="tech-summary">CI/CD Pipeline Orchestration Frameworks</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Pipes-line Code Syntax (Groovy/Jenkis YAML)</li>
                         <li>MultiStage Build-Prozesse mit Artefaktverpackung</li>
                         <li>Parallel Jobs & Quality Gate Validation</li>
@@ -233,7 +232,7 @@
                      <h3 class="tech-Kartikel">Harbor (OCI Registry)</h3>
                      <p class="tech-summary">Private Container Image Repository mit Security Scanning</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Namespace-getrennte Repositories mit RBAC Berechtigungen</li>
                         <li>VulnerabilityScanning via ClamAV Integration</li>
                      </ul>
@@ -244,7 +243,7 @@
                      <h3 class="tech-Kartikel">Docker Container</h3>
                      <p class="tech-summary">Microservicing Image Paketierung & Layered Buildoptimierung</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Dockerfile-Generators mit Multiple Stages</li>
                         <li>.Dokerignore Exclude Patterns für Cleaner Layers</li>
                         <li>Build Cache Optimization Techniken (COPY vs RUN Order)</li>
@@ -255,7 +254,7 @@
 
             <!-- Community Collaboration CHATTOOLS -->
             <details "open>
-               <summary style="cursor:pointer;font-weight:600;color:#2c3e50;">COMMUNITY COLLABORATION CHATTOOLS</summary>
+               <summary 
                <div class="dashboard-grid">
             
                   <!-- Rocket.Chat Enterprise Messenger -->
@@ -263,7 +262,7 @@
                      <h3 class="tech-kartittel">Rocket.Chat</h3>
                      <p class="tech-summary">Self-hosted Omni-Channel Livechat Lösung für Supportteams</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Livechat-rooms und Kanäle Integration</li>
                         <li>Slack-Interface ähnliche UX Design-Erfahrung</li>
                         <li>Push Benarichtigungen</li>
@@ -275,7 +274,7 @@
                      <h3 class="tech-kartitel">Matrix (Element.io)</h3>
                      <p class="tech-summary">Federisches Dezentralisiertes Chat Netwerk</p>
                      
-                     <ul style="ListStyleType:Circle;padding-left:3rem;margin:0.5rem 0 1rem 0;">
+                     <ul 
                         <li>Räume übers mehrere Serverfederations verteilt</li>
                         <li>End-to-End Verschlussung</li>
                         <li>Power-Level Hierarchie für Moderaton Kontrolle</li>
