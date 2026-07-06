@@ -1,7 +1,6 @@
 /* Allgemeine Styles */
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -15,96 +14,6 @@ body {
 
 .content p {
     margin: 10px 0;
-}
-
-/* Statischer Container auf der linken Seite */
-.sidebar {
-    position: fixed; /* Fixierte Position */
-    left: 0;
-    top: 0;
-    width: 250px; /* Breite des Containers */
-    height: 100vh; /* Volle Höhe des Viewports */
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
-    z-index: 1000; /* Sicherstellen, dass er über anderem Inhalt liegt */
-    overflow-y: auto; /* Scrollbar bei Bedarf */
-}
-
-.sidebar-content {
-    padding: 0 20px;
-}
-
-.sidebar h2 {
-    margin-bottom: 20px;
-    font-size: 1.5em;
-    border-bottom: 1px solid #34495e;
-    padding-bottom: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    margin-bottom: 30px;
-}
-
-.sidebar li {
-    margin-bottom: 10px;
-}
-
-.sidebar a {
-    color: #bdc3c7;
-    text-decoration: none;
-    display: block;
-    padding: 8px 12px;
-    transition: all 0.3s;
-    border-radius: 4px;
-}
-
-.sidebar a:hover {
-    background-color: #34495e;
-    color: white;
-    transform: translateX(5px);
-}
-
-.sidebar-section {
-    margin-bottom: 25px;
-}
-
-.sidebar-section h3 {
-    margin-bottom: 10px;
-    font-size: 1.1em;
-}
-
-.sidebar-section input[type="text"],
-.sidebar-section input[type="email"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 4px;
-    background-color: #34495e;
-    color: white;
-}
-
-.sidebar-section input[type="text"]:focus,
-.sidebar-section input[type="email"]:focus {
-    outline: 1px solid #3498db;
-}
-
-.sidebar-section button {
-    width: 100%;
-    padding: 10px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.sidebar-section button:hover {
-    background-color: #2980b9;
 }
 
 /* Hauptinhalt rechts */
@@ -134,10 +43,15 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #2c3e50;
+.menu-desktop-container {
+    display: flex;
+    align-items: center;
+    margin-left: 40px; /* Adjust this value to move logo further right */
+}
+
+.nav-links {
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .img-circle {
@@ -182,41 +96,117 @@ nav {
     color: #3498db;
 }
 
-/* Hero Section */
-       .hero-background {
-          background: linear-gradient(135deg, rgba(44,62,80,0.85), rgba(52,152,219,0.9)), url('https://tsv4u.de/images/trainer/512px/patrick_hoke_512.jpg');
-          background-blend-mode: overlay;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-        }
+/* --- MODERN HERO SECTION REWRITE --- */
+.hero-background {
+    padding: 100px 0;
+    background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+}
 
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
 
-.hero-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
+.hero-content-split {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4rem;
+}
+
+.hero-text-column {
+    flex: 1.5;
+    max-width: 600px;
+    z-index: 2;
+}
+
+.hero-image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-graphic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 600px;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+.hero-title {
+    font-size: clamp(3rem, 6vw, 5rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
+    color: #ffffff;
     font-weight: 800;
 }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
+.hero-description {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    max-width: 600px;
+    line-height: 1.7;
 }
 
 .cta-button {
-    padding: 12px 30px;
-    background-color: #3498db;
+    display: inline-block;
+    padding: 16px 32px;
+    background-color: #6366f1;
     color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 1em;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.4);
 }
 
 .cta-button:hover {
-    background-color: #2980b9;
+    background-color: #4f46e5;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(99, 102, 241, 0.6);
 }
+
+.profile-avatar-hero {
+    width: 400px;
+    height: auto;
+    border-radius: 38% 62% 60% 40% / 40% 40% 60% 70%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 30px 30px 80px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.profile-avatar-hero:hover {
+    transform: scale(1.05) rotate(-2deg);
+    filter: brightness(1.08);
+}
+
+@media (max-width: 992px) {
+    .hero-content-split {
+        flex-direction: column;
+        text-align: center;
+        gap: 3rem;
+    }
+    .hero-text-column, .hero-image-column {
+        max-width: 100%;
+    }
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .profile-avatar-hero {
+        width: 300px;
+    }
+}
+
 
 /* Sections */
 .container {
@@ -330,14 +320,11 @@ h2 {
     font-weight: 800;
 }
 
-/* Footer */
-footer {
-    background-color: #2c3e50;
-    color: white;
+.skills-description {
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    margin-bottom: 2rem;
 }
+
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -407,128 +394,137 @@ footer {
 
 /* MODERN CARD-BASED GRID SYSTEM */
       
-        .dashboard-grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-          gap: 1.25rem;
-          margin: 2rem 0 3rem 0;
-          padding: 0;
-        }
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.25rem;
+    margin: 2rem 0 3rem 0;
+}
+.profile-avatar-hero {
+    width: 400px;
+    height: auto;
+    border-radius: 38% 62% 60% 40% / 40% 40% 60% 70%;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 30px 30px 80px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
 
-        /** ENFORCE CONSISTENCY: Force ALL tech-card elements to orange theme on hover (matching database section) */
-        article[class *="tech-card"] {
-          border-top: 3px solid #e74c3c;
-          transition: border-top-color 0.25s ease-out, border-color 0.25s ease-out;
-        }
-        article[class *="tech-card"]:hover {
-          border-top-color: #27ae60;
-          transform: translateY(-4px);
-          box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-        }
+.profile-avatar-hero:hover {
+    transform: scale(1.05) rotate(-2deg);
+    filter: brightness(1.08);
+}
 
-       .tech-card {
-         background: #ffffff;
-         padding: 1.75rem 1.25rem;
-         border: 1px solid #dee2e6;
-         border-top: 3px solid #2c3e50;
-         border-radius: 8px;
-         box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-         transition: all 0.25s ease-out;
-      }
-      
-         /** UNIFORMLY APPLY CARD BORDER TOGGLE EFFECT ON HOVER */
-         .tech-card:hover {
-            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-            border-top-color: rgb(231, 76, 60);
-            transform: translateY(-4px);
-         }
-      
-      /* Farbvariante für Technologie-Kategorien */
-      .tech-card.blau { border-top-color: #3498db; }
-      .tech-card-hover-variant-uniform { border-top-color: #27ae60; }
-      .tech-card-hover-variant-uniform { border-top-color: #e74c3c; }
-      .tech-card-hover-variant-uniform { border-top-color: #9b59b6; }
-      .tech-card-hover-variant-uniform { border-top-color: #95a5a6; }
-      
-      .tech-card-hover-variant-uniform { border-top-color: #2980b9; }
-      .tech-card-hover-variant-uniform { border-top-color: #229954; }
-      .tech-card-hover-variant-uniform { border-top-color: #c0392b; }
-      .tech-card-hover-variant-uniform { border-top-color: #8e44ad; }
-      .tech-card-hover-variant-uniform { border-top-color: #7f8c8d; }
-      
-      .tech-kartitel {
-         font-size: 1.125rem;
-         margin-bottom: 0.75rem;
-      }
-      
-      .tech-zusammenfassung {
-         color: #555;
-         font-size: 0.875rem;
-         line-height: 1.5;
-         margin-bottom: 0.75rem;
-         font-style: italic;
-      }
-      
-      .tech-list ul {
-         list-style-type: disc;
-         padding-left: 3rem;
-         margin: 0 0 1rem 0;
-         padding: 0;
-      }
-      
-      .tech-list li {
-         margin: 0.4em 0;
-         line-height: 1.6;
-         font-weight: 500;
-         color: #2c3e50;
-      }
-      
-      .profile-avatar {
-         width: 200px;
-         height: 200px;
-         border: 4px solid white;
-         border-radius: 50%;
-         object-fit: cover;
-         box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-         display: block;
-         margin: 0 auto 1.5rem auto;
-         max-width: 300px;
-      }
-      
-      .sticky-header {
-         position: sticky;
-         top: 0;
-         z-index: 1000;
-         background: white;
-         box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-         padding: 0.875rem 0;
-         margin-top: -0px;
-      }
-      
-      .navigation-sticky ul {
-         display: none;
-         padding: 0;
-         margin: 0;
-         list-style: none;
-         float: right;
-         gap: 2rem;
-      }
-      
-      .has-mobile-menu .navigation-sticky ul {
-         display: flex;
-      }
-      
-      .hero-text-center {
-         text-align: center;
-         color: white;
-      }
-      
-      .profile-info-flex {
-         display: flex;
-         flex-wrap: wrap;
-         align-items: center;
-         justify-content: center;
-         gap: 1.5rem;
-         margin: 2rem 0;
-         padding: 0;
-      }
+/** ENFORCE CONSISTENCY: Force ALL tech-card elements to orange theme on hover (matching database section) */
+article[class *="tech-card"] {
+    border-top: 3px solid #e74c3c;
+    transition: border-top-color 0.25s ease-out, border-color 0.25s ease-out;
+}
+article[class *="tech-card"]:hover {
+    border-top-color: #27ae60;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.tech-card {
+    background: #ffffff;
+    padding: 1.75rem 1.25rem;
+    border: 1px solid #dee2e6;
+    border-top: 3px solid #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.25s ease-out;
+}
+
+    /** UNIFORMLY APPLY CARD BORDER TOGGLE EFFECT ON HOVER */
+    .tech-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    border-top-color: rgb(231, 76, 60);
+    transform: translateY(-4px);
+    }
+
+/* Farbvariante für Technologie-Kategorien */
+.tech-card.blau { border-top-color: #3498db; }
+.tech-card-hover-variant-uniform { border-top-color: #27ae60; }
+.tech-card-hover-variant-uniform { border-top-color: #e74c3c; }
+.tech-card-hover-variant-uniform { border-top-color: #9b59b6; }
+.tech-card-hover-variant-uniform { border-top-color: #95a5a6; }
+
+.tech-card-hover-variant-uniform { border-top-color: #2980b9; }
+.tech-card-hover-variant-uniform { border-top-color: #229954; }
+.tech-card-hover-variant-uniform { border-top-color: #c0392b; }
+.tech-card-hover-variant-uniform { border-top-color: #8e44ad; }
+.tech-card-hover-variant-uniform { border-top-color: #7f8c8d; }
+
+.tech-kartitel {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+}
+
+.tech-summary {
+    color: #555;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin-bottom: 0.75rem;
+    font-style: italic !important;
+}
+
+.tech-list {
+    margin: 0;
+}
+
+.tech-list li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem; /* Sichersteller für den Einzug */
+    display: list-item;
+}
+
+.profile-avatar {
+    width: 200px;
+    height: 200px;
+    border: 4px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    display: block;
+    margin: 0 auto 1.5rem auto;
+    max-width: 300px;
+}
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: white;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    padding: 0.875rem 0;
+    margin-top: -0px;
+}
+
+.navigation-sticky ul {
+    display: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: right;
+    gap: 2rem;
+}
+
+.has-mobile-menu .navigation-sticky ul {
+    display: flex;
+}
+
+.hero-text-center {
+    text-align: center;
+    color: white;
+}
+
+.profile-info-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    padding: 0;
+}
