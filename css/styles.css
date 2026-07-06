@@ -50,35 +50,13 @@ nav {
 }
 
 .nav-links {
-    margin-left: auto;
-    margin-right: 20px;
-}
-
-.img-circle {
-    height: 125%;
-    width: 100%; 
-    -moz-border-radius: 100%;
-    -webkit-border-radius: 100%;
-    border-radius: 100%;
-    object-fit: cover;
-    object-position: center top;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 70%);
-}
-
-.sidebar-img {
-    height: 150px;
-    width: 150px;
-    margin-top: 40px;
-    padding-top: 20px;
-    padding-left: 20px;
-}
-
-.nav-links {
     display: flex;
     flex-direction: row;
     align-items: center;
     list-style: none;
     gap: 20px;
+    margin-left: auto;
+    margin-right: 20px;
 }
 
 .nav-links li {
@@ -98,8 +76,9 @@ nav {
 
 /* --- MODERN HERO SECTION REWRITE --- */
 .hero-background {
-    padding: 100px 0;
+    padding: 50px 0;
     background: linear-gradient(to bottom right, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.95));
+    scroll-margin-top: 100px; 
 }
 
 .hero-container {
@@ -230,11 +209,6 @@ section h2 {
 }
 
 /* About Section */
-.about {
-    background-color: white;
-    padding: 80px 0;
-}
-
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
@@ -242,27 +216,6 @@ h2 {
 }
 
 /* Services Section */
-.services {
-    background-color: #f8f9fa;
-    padding: 80px 0;
-}
-
-.service-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-.service-card {
-    background-color: white;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    text-align: center;
-    transition: transform 0.3s;
-}
-
 .service-card:hover {
     transform: translateY(-5px);
 }
@@ -328,10 +281,6 @@ h2 {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-    }
-    
     .main-content {
         margin-left: 200px;
     }
@@ -343,19 +292,9 @@ h2 {
     .nav-links {
         display: none;
     }
-    
-    .hero {
-        padding: 60px 20px;
-    }
 }
 
 @media (max-width: 480px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-    
     .main-content {
         margin-left: 0;
         padding: 10px;
@@ -364,32 +303,6 @@ h2 {
     .hero-content h1 {
         font-size: 1.5em;
     }
-    
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .hero {
-        padding: 40px 20px;
-    }
-}
-
-/* Scrollbar-Stil für den Sidebar */
-.sidebar::-webkit-scrollbar {
-    width: 6px;
-}
-
-.sidebar::-webkit-scrollbar-track {
-    background: #34495e;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background: #3498db;
-    border-radius: 3px;
-}
-
-.sidebar::-webkit-scrollbar-thumb:hover {
-    background: #2980b9;
 }
 
 /* MODERN CARD-BASED GRID SYSTEM */
@@ -400,24 +313,20 @@ h2 {
     gap: 1.25rem;
     margin: 2rem 0 3rem 0;
 }
+
 .profile-avatar-hero {
     width: 400px;
     height: auto;
-    border-radius: 38% 62% 60% 40% / 40% 40% 60% 70%;
+    border-radius: 38% 70% 100% 40% / 40% 40% 100% 100%;
     border: 5px solid rgba(255, 255, 255, 0.1);
     box-shadow: 30px 30px 80px rgba(0, 0, 0, 0.4);
     object-fit: cover;
     transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.profile-avatar-hero:hover {
-    transform: scale(1.05) rotate(-2deg);
-    filter: brightness(1.08);
-}
-
 /** ENFORCE CONSISTENCY: Force ALL tech-card elements to orange theme on hover (matching database section) */
 article[class *="tech-card"] {
-    border-top: 3px solid #e74c3c;
+    border-top: 3px solid #4f46e5;
     transition: border-top-color 0.25s ease-out, border-color 0.25s ease-out;
 }
 article[class *="tech-card"]:hover {
@@ -439,23 +348,11 @@ article[class *="tech-card"]:hover {
     /** UNIFORMLY APPLY CARD BORDER TOGGLE EFFECT ON HOVER */
     .tech-card:hover {
     box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-    border-top-color: rgb(231, 76, 60);
+    border-top-color: #4f46e5;
     transform: translateY(-4px);
     }
 
 /* Farbvariante für Technologie-Kategorien */
-.tech-card.blau { border-top-color: #3498db; }
-.tech-card-hover-variant-uniform { border-top-color: #27ae60; }
-.tech-card-hover-variant-uniform { border-top-color: #e74c3c; }
-.tech-card-hover-variant-uniform { border-top-color: #9b59b6; }
-.tech-card-hover-variant-uniform { border-top-color: #95a5a6; }
-
-.tech-card-hover-variant-uniform { border-top-color: #2980b9; }
-.tech-card-hover-variant-uniform { border-top-color: #229954; }
-.tech-card-hover-variant-uniform { border-top-color: #c0392b; }
-.tech-card-hover-variant-uniform { border-top-color: #8e44ad; }
-.tech-card-hover-variant-uniform { border-top-color: #7f8c8d; }
-
 .tech-kartitel {
     font-size: 1.125rem;
     margin-bottom: 0.75rem;
@@ -479,18 +376,6 @@ article[class *="tech-card"]:hover {
     display: list-item;
 }
 
-.profile-avatar {
-    width: 200px;
-    height: 200px;
-    border: 4px solid white;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
-    display: block;
-    margin: 0 auto 1.5rem auto;
-    max-width: 300px;
-}
-
 .sticky-header {
     position: sticky;
     top: 0;
@@ -501,16 +386,7 @@ article[class *="tech-card"]:hover {
     margin-top: -0px;
 }
 
-.navigation-sticky ul {
-    display: none;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    float: right;
-    gap: 2rem;
-}
-
-.has-mobile-menu .navigation-sticky ul {
+.has-mobile-menu ul {
     display: flex;
 }
 
@@ -519,12 +395,22 @@ article[class *="tech-card"]:hover {
     color: white;
 }
 
-.profile-info-flex {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-    padding: 0;
+.skills-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-weight: bold;
+}
+
+.site-footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    margin-top: 60px;
+}
+
+.site-footer p {
+    margin: 0;
+    opacity: 0.8;
 }
